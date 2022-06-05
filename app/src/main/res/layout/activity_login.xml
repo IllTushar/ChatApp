@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    >
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="40dp"
+    android:src="@drawable/chat"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chat App"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#2196F3"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SignIn"
+        android:layout_gravity="end"
+        android:textSize="22dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#2196F3"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/emailId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="6dp"
+        android:hint=" Email ID"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:background="@drawable/edit_text"/>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="6dp"
+        android:hint=" Password"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:background="@drawable/edit_text"/>
+    <TextView
+        android:id="@+id/forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password?"
+        android:layout_gravity="end"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#2196F3"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/lsignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="5dp"
+
+            android:background="@drawable/edit_text"
+            android:text="SignIn"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-condensed"/>
+        <Button
+            android:id="@+id/lsignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/edit_text"
+            android:text="SignUp"
+            android:textSize="15dp"
+            android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+</LinearLayout>
